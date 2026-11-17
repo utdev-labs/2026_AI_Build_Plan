@@ -6,14 +6,14 @@
 - **Mental Model:** Stop thinking about "agents" or "prompts." Identify the distinct purposes your underwriting engine serves and what state must exist independently for each.
 
 ## The 4-Layer GenAI Stack & Scope Framing (Columbia Pillar):
-- **Read**: Anthropic’s Building Effective Agents(https://www.anthropic.com/research/building-effective-agents) (Sections 1 & 2: When to use agents and Workflows vs. Agents) and [Chip Huyen’s Building A Generative AI Platform](Building A Generative AI Agents) to ground your 4-layer stack view:
+- **Read**: Anthropic’s Building Effective Agents(https://www.anthropic.com/research/building-effective-agents) (Sections 1 & 2: When to use agents and Workflows vs. Agents) and [Chip Huyen’s Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html) to ground your 4-layer stack view:
   - Layer 1: Model & Inference Layer (Reasoning models vs. fast extraction models)
   - Layer 2: Context & Knowledge Layer (Data rooms, tax returns, leases, comps, structured financial schemas)
   - Layer 3: Orchestration & Harness Layer (Deterministic math rules, approval gates, state transitions)
   - Layer 4: Application & Governance Layer (Audit logs, refusal enforcement, human review UI)
 
 ## Refusal Boundaries & Epistemic Humility:
-- Read: [OWASP Top 10 for LLM Applications](LLM Application) — specifically LLM06: Excessive Agency and LLM09: Misinformation / Overreliance.
+- Read: [OWASP Top 10 for LLM Applications](https://owasp.org/projects/top-10-for-large-language-model-applications) — specifically LLM06: Excessive Agency and LLM09: Misinformation / Overreliance.
 - Key Principle: An underwriting engine's value is determined by what it refuses to guess. If a seller's P&L omits owner add-backs or a lease lacks an escalation clause, the system must halt and flag the omission rather than interpolating an industry average silently.
 
 | Session | Activity & Output |
